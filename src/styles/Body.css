@@ -118,11 +118,8 @@
 
 .izquierda_end {
   background-color: white;
-  margin-top: 100px;
-  margin-right: 70px;
-
-  padding: 26px;
-  margin-bottom: 200px;
+  margin-top: 60px;
+  margin-right: 73px;
 }
 
 /* DIV FOR THE STREAM */
@@ -163,7 +160,6 @@
   height: 470px;
   background-color: rgb(37, 59, 156);
   margin-bottom: 40px;
- 
 }
 
 .hijo_5 {

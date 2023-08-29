@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(79, 79, 79); /* Fondo negro */
+  height: 1450px;
+}
+/* CENTRAL CONTENT OF THE PAGE */
+.news {
+  display: flex;
+  background-color: white;
+  max-height: 100%;
+  width: 1500px;
+  object-fit: cover;
+}

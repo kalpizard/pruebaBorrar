@@ -1,20 +1,11 @@
 import React from "react";
-import "../styles/Body.css";
-import juego from "../demo.gif";
-import live from "../episode.jpg";
-import direct from "../directo.png";
-import close from "../block.avif";
-import port from "../wall.jpg";
-import task from "../poke_2.jpg";
-import proxi from "../nex.gif";
-import rompecabeza from "../puzzle.webp";
+import "../styles/ContentWhite.css";
 
-function Body() {
+function ContentWhite() {
   return (
-    //GIVES BODY TO THE PAGE
     <div className="content">
       <div className="news">
-        <div className="news-column column-1">
+        {/* <div className="news-column column-1">
           <div className="div-1">
             <img
               src={port}
@@ -60,7 +51,7 @@ function Body() {
             />
 
             <div>
-              <h1>+8 </h1>
+            <h1>+8 </h1>
               <h2>🛒 AGREGA AL CARRITO. </h2>
             </div>
           </div>
@@ -107,10 +98,10 @@ function Body() {
             </div>
             <div className="hijo_6"></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
 }
 
-export default Body;
+export default ContentWhite;
