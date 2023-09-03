@@ -1,20 +1,35 @@
 .pokemon-container {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(255, 182, 193);
+  background-color: rgb(  0, 32, 91);
   height: 133px;
-  border-bottom: 5px solid white; 
+  border-bottom: 3px solid white; 
   /* border-top: 4px solid rgb(79, 79, 79);  */
   
 
 }
 
+
+
+
+
+/* 
+@font-face {
+  font-family: 'PixelFont';
+  src: url("") format('woff2'),
+       url('ruta/a/la/fuente/pixel.woff') format('woff');
+
+} */
+
 .nombres {
+ 
+
+
   display: flex;
   justify-content: center;
   font-size: 20px;
-  font-family: "Pokemon Solid", sans-serif;
-  color: rgb(79, 79, 79);
+
+  color: white;
 }
 
 .linea {

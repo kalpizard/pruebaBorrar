@@ -7,7 +7,9 @@ import close from "../block.avif";
 import port from "../wall.jpg";
 import task from "../poke_2.jpg";
 import proxi from "../nex.gif";
-import rompecabeza from "../puzzle.webp";
+import SwiperHome from "./SwiperHome";
+import seriessns from "../series.jpg";
+import pokemon_game from "../pokemon_game.avif";
 
 function Body() {
   return (
@@ -17,7 +19,7 @@ function Body() {
         <div className="news-column column-1">
           <div className="div-1">
             <img
-              src={port}
+              src={pokemon_game}
               alt="Descripción de la imagen"
               style={{ width: "100%", height: "100%" }}
             />
@@ -28,18 +30,18 @@ function Body() {
                 <img
                   src={juego}
                   alt="Descripción de la imagen"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: "100%", height: "75%" }}
                 />
               </div>
-              <button className="button-1">¡Demo!</button>
+              <button className="button-1">TRY DEMO!</button>
             </div>
             <div className="div-4">
               <div className="hijo-1">
-                <h2>NUEVO DEMO ONLINE.</h2>
+                <h2 className="whithe">NEW ONLINE DEMO!</h2>
 
-                <p>-Completa todas las misiónes.</p>
-                <p>-Atrapa todos los Pokémons.</p>
-                <p>-Reclama recompensas!.</p>
+                <p className="whithe">--Complete all quests.</p>
+                <p className="whithe">--Claim rewards.</p>
+                <p className="whithe">--Catch 'em all!.</p>
               </div>
 
               <div className="hijo-2">
@@ -52,16 +54,9 @@ function Body() {
             </div>
           </div>
 
-          <div className="izquierda_end">
-            <img
-              src={rompecabeza}
-              alt="Descripción de la imagen"
-              style={{ width: "85%", height: "67%" }}
-            />
-
-            <div>
-              <h1>+8 </h1>
-              <h2>🛒 AGREGA AL CARRITO. </h2>
+          <div className="centrado">
+            <div className="izquierda_end">
+              <SwiperHome></SwiperHome>
             </div>
           </div>
         </div>
@@ -69,7 +64,7 @@ function Body() {
         <div className="news-column column-2">
           <div className="grande">
             <img
-              src={live}
+              src={seriessns}
               alt="Descripción de la imagen"
               style={{ width: "100%", height: "100%" }}
             />
@@ -99,11 +94,12 @@ function Body() {
             </div>
 
             <div className="hijo_5">
-              <img
+              {/* <img
                 src={proxi}
                 alt="Descripción de la imagen"
                 style={{ width: "70%", height: "100%" }}
-              />
+              /> */}
+              <h1>COMING SOON</h1>
             </div>
             <div className="hijo_6"></div>
           </div>
