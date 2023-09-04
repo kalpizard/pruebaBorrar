@@ -1,12 +1,12 @@
-.contendo{
+.contenido{
 
-    .news {
+    
         display: flex;
         background-color: white;
         max-height: 100%;
         width: 1500px;
         object-fit: cover;
-      }
+      
 
 
 }
