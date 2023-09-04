@@ -29,7 +29,8 @@ function Cuerpoabout() {
 
         <div className="contenedor2">
         <div className="contenido2">
-<h1>¿Qué es Pokémon?</h1>
+<h1 >¿Qué es Pokémon?</h1>
+
 <p>Los Pokémon son criaturas misteriosas llenas de muchos secretos. Algunos Pokémon viven junto a los humanos y otros viven en estado salvaje en campos de hierba, cuevas o el mar, pero aún se desconoce mucho sobre su ecología. </p>
 <p>Una de sus principales características es que pueden ser atrapados usando una Poké Ball, lo que permite transportarlos.</p>
 
