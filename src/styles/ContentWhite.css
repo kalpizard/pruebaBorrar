@@ -1,7 +1,7 @@
 .content {
   display: flex;
   justify-content: center;
-  background-color: rgb(255, 255, 255); /* Fondo negro */
+  background-color: rgb(255, 255, 191); /* Fondo negro */
   height: 1450px;
 }
 /* CENTRAL CONTENT OF THE PAGE */

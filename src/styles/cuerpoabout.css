@@ -1,0 +1,91 @@
+.prueba{
+
+display: flex ;
+justify-content: space-around;
+
+
+background-color: rgb(255, 255, 191);
+}
+
+.contenido{
+
+
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    
+    background-color: rgb(255, 0, 0);
+    height: 650px;
+    width: 200px;
+    /* border: 8px solid rgb(212, 175, 55); */
+    border-right: 8px solid rgb(212, 175, 55);
+
+    border-bottom: 11px solid rgb(212, 175, 55);
+    border-left: 8px solid rgb(212, 175, 55);
+
+    
+    
+
+}
+.contenedor2{
+
+
+    border: 15px solid rgb(255, 255, 255);
+    
+}
+
+.contenido2{
+
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255);
+    height: 1423px;
+    width: 800px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contenido3{
+
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    
+    background-color: rgb(0, 140, 255);
+    height: 650px;
+    width: 200px;
+    /* border: 8px solid rgb(212, 175, 55); */
+
+    /* border-top: 18px solid rgb(0, 0, 0); */
+    border-right: 8px solid rgb(212, 175, 55);
+
+    border-bottom: 11px solid rgb(212, 175, 55);
+    border-left: 8px solid rgb(212, 175, 55);
+
+    
+    
+
+
+}
+
+.japan2{
+    
+    
+    
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    
+}
+.japan1{
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    
+
+
+}
