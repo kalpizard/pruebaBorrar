@@ -1,14 +1,20 @@
 import React from "react";
-import Header from "../components/Header";
-import Body from "../components/Body";
+import Header from "../Components/Header";
 import "../styles/Prueba.css";
 import "../styles/Contenido.css";
 
 function Pokedex() {
   return (
     <div className="prueba">
-      <Header />
-      <Body />
+      <div>
+        <Header />
+
+      
+      </div>
+
+      
+
+      
     </div>
   );
 }

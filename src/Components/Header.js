@@ -3,6 +3,7 @@ import { getRandomPokemonId } from "./poke-api";
 import defaultImage from "../pokeball.gif";
 import "../styles/Header.css";
 
+
 const Header = () => {
   const [randomPokemons, setRandomPokemons] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -10,7 +11,7 @@ const Header = () => {
     const fetchRandomPokemons = async () => {
       try {
         const getRandomIds = () => Math.floor(Math.random() * 200) + 1;
-        const pokemonIds = Array.from({ length: 5 }, getRandomIds);
+        const pokemonIds = Array.from({ length: 6 }, getRandomIds);
 
         var fetchedPokemons = [];
 

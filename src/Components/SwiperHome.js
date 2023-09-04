@@ -27,9 +27,9 @@ function SwiperHome() {
             />
 
             <div className="carrito-box">
-              <h1>8 Unidades</h1>
-              <h1>+10 años</h1>
-              <h2>🛒 AGREGA AL CARRITO. </h2>
+              <h1>+8 Units</h1>
+              <h1>+10 YEARS</h1>
+              <h2>🛒 ADD TO CART. </h2>
             </div>
           </div>
         </SwiperSlide>
@@ -42,8 +42,8 @@ function SwiperHome() {
             />
 
             <div className="carrito-box">
-              <h1>+8 Unidades</h1>
-              <h2>🛒 AGREGA AL CARRITO. </h2>
+              <h1>+8 Units</h1>
+              <h2>🛒 ADD TO CART </h2>
             </div>
           </div>
         </SwiperSlide>
@@ -56,8 +56,8 @@ function SwiperHome() {
             />
 
             <div className="carrito-box">
-              <h1>+8 Unidades</h1>
-              <h2>🛒 AGREGA AL CARRITO. </h2>
+              <h1>+8 Units</h1>
+              <h2>🛒 ADD TO CART </h2>
             </div>
           </div>
         </SwiperSlide>
@@ -70,8 +70,8 @@ function SwiperHome() {
             />
 
             <div className="carrito-box">
-              <h1>8 Unidades</h1>
-              <h2>🛒 AGREGA AL CARRITO. </h2>
+              <h1>+8 Units</h1>
+              <h2>🛒 ADD TO CART </h2>
             </div>
           </div>
         </SwiperSlide>
