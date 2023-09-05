@@ -57,7 +57,7 @@ El juego está diseñado para que los jugadores cooperen con amigos y familiares
 
 Si bien hay muchas cosas divertidas en el Juego de Cartas Coleccionables Pokémon, quizás el aspecto más atractivo es que se juega persona contra persona. Los jugadores pueden chatear, intercambiar cartas y unirse a torneos celebrados en varios lugares mientras luchan, creando todo tipo de recuerdos a medida que conocen gente a través del juego de cartas.</p>
 
-
+{/* 
 
 
 <h3>Aplicaciones Pokémon</h3>
@@ -72,7 +72,7 @@ El juego continúa evolucionando incluso hoy en día, con nuevos Pokémon y nuev
 <h3>El futuro de Pokémon</h3>
 <p>El mundo de Pokémon actualmente está desarrollando una variedad de contenidos que sirven para estimular el crecimiento de otros contenidos.
 
-Por ejemplo, convertir los Pokémon creados en el juego en cartas que aprovechen sus características y luego en personajes lindos y valientes para la serie animada creará un atractivo aún más amplio. De esta forma, el mundo de Pokémon sigue haciéndose más profundo y evolucionando hacia algo aún más interesante.</p>
+Por ejemplo, convertir los Pokémon creados en el juego en cartas que aprovechen sus características y luego en personajes lindos y valientes para la serie animada creará un atractivo aún más amplio. De esta forma, el mundo de Pokémon sigue haciéndose más profundo y evolucionando hacia algo aún más interesante.</p> */}
         </div>
 
         </div>
