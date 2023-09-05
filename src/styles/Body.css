@@ -79,13 +79,13 @@
   width: 326px;
   transition: background-color 0.3s, color 0.3s; /* Agregar una transición suave para los cambios */
 
-  background-color: rgb(255, 204, 0);
-  color: rgb(0, 0, 0);
+  background-color: purple;
+  color: white;
 }
 /* DEMO BUTTON HOVER */
 .button-1:hover {
-  background-color: rgb(255, 72, 0);
-  color: rgb(255, 255, 255);
+  background-color: rgb(213, 255, 2);
+  color: rgb(4, 4, 4);
 }
 
 /* DEMO RIGHT DIV */
