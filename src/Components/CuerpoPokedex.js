@@ -39,6 +39,19 @@ function Pokedex33() {
 
   return (
     <div className="contenedor">
+
+
+
+
+
+
+
+
+
+
+
+
+
       {isLoading ? (
         <>
           {Pokemons.map((item, index) => {
@@ -62,6 +75,8 @@ function Pokedex33() {
 
 
                 <div className="cover">
+
+
                   <img className="tamaño" src={item.image} />
                 </div>
               </div>

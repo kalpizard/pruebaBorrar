@@ -11,6 +11,7 @@ function About() {
   return (
     <div>
       <Header />
+      
       <Cuerpoabout />
     </div>
   );

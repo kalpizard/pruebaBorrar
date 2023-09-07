@@ -31,6 +31,7 @@ function Pagination({ totalItems, itemsPerPage, currentPage, updatePage }) {
 
   return (
 
+<div className="acomodo"> 
 <div className="botones">
 
 
@@ -46,6 +47,7 @@ function Pagination({ totalItems, itemsPerPage, currentPage, updatePage }) {
         </button>
       ))}
     </div>
+      </div>
       </div>
   );
 }
