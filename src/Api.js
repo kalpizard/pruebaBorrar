@@ -36,7 +36,11 @@ export async function getPokemonList (url) {
         return {
             id,
             name:data.name,
-            image:data.sprites.front_default
+            image:data.sprites.other["official-artwork"]["front_default"],
+            image2:data.sprites.versions['generation-v']['black-white'].animated['front_default'],
+            experience: data.base_experience,
+            type: data.types.map((item) => item.type.name),
+            image3:data.sprites.versions['generation-v']['black-white'].animated['back_default'],
         }
     } catch (error) {
       console.error (" Error capturando el detalle", error);

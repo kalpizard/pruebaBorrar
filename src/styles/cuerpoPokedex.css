@@ -1,21 +1,37 @@
-
-
-.contenedor{
-  display: flex;
+.contenedor {
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  background-color: rgb(255, 255, 191);
-} 
+  justify-content: center; */
 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  text-align: center;
+
+  background-color: rgb(255, 255, 191);
+}
+
+
+.imagenesinternas{
+  display: flex;
+  justify-content: center;
+}
+
+.imagenInterior{
+  width: 100px;
+  height: 100px;
+}
+.tamaño {
+  height: 220px;
+  width: 220px;
+}
 
 .book {
-
-  margin: 20px;
+  margin: 30px;
   /* position: relative; */
   border-radius: 10px;
   width: 300px;
   height: 450px;
-  background-color: whitesmoke;
+  background-color: rgb(227, 228,229);
   -webkit-box-shadow: 1px 1px 12px #000;
   box-shadow: 1px 1px 12px #000;
   -webkit-transform: preserve-3d;
@@ -25,53 +41,83 @@
   perspective: 2000px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: space-around;
-  
+
   color: #000;
+  border-radius: 17px;
 }
 
 .cover {
   top: 0;
   position: absolute;
-  background-color: rgb(166, 37, 175);
+  /* background-color: rgb(254, 70, 165); */
+  background-image: url(../poki.png);
+  background-size: 300px  450px;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   cursor: pointer;
-  -webkit-transition: all 4s;
-  transition: all 2s;
-  -webkit-transform-origin: 0;
-  -ms-transform-origin: 0;
+  transition: all 0.6s;
   transform-origin: 0;
-  -webkit-box-shadow: 1px 1px 12px #000;
   box-shadow: 1px 1px 12px #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  align-content: center;
   justify-content: space-around;
-  
+  border-radius: 17px;
 }
 
 .book:hover .cover {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
   -webkit-transform: rotatey(-80deg);
   -ms-transform: rotatey(-80deg);
   transform: rotatey(-80deg);
 }
 
+.name{
+
+font-size: 40px;
+
+}
+
+.letrastyle{
+/* margin-top: 60px; */
+  /* display:flex; */
+  /* justify-content: center; */
+  align-items: center;
+  color: rgb(0, 75, 173);
+  
+  font-size: 80px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+
+
+
 p {
   font-size: 20px;
   font-weight: bolder;
 }
+
+/* .botones {
+
+
+height: 30px ;
+display: flex;
+justify-content: center;
+width: 30px;
+align-items: center;
+
+
+ 
+} */
