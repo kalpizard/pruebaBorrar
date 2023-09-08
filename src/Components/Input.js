@@ -9,7 +9,7 @@ function Search() {
 
 <div className="fondo">   
 <div class="form">
-  <input class="input" placeholder="Busca tu Pokémon" required="" type="text"/>
+  <input class="input" placeholder="Busca tu Pokémon" required="" type="text" />
   <span class="input-border"></span>
 </div>
 </div>

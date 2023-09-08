@@ -1,92 +1,31 @@
-/* .input-container {
 
-    margin-left: 40px;
 
-    margin-top: 17px;
-    
-    position: relative;
-  }
-  
-  .input {
-    padding: 10px;
-    height: 40px;
-    
-    width: 1800px;
-    border: 2px solid #0B2447;
-    border-top: none;
-    border-bottom: none;
-    font-size: 16px;
-    background: transparent;
-    outline: none;
-    box-shadow: 7px 7px 0px 0px #0B2447;
-    transition: all 0.5s;
-  }
-  
-  .input:focus {
-    box-shadow: none;
-    transition: all 0.5s;
-  }
-  
-  .label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #0B2447;
-    transition: all 0.5s;
-    transform: scale(0);
-    z-index: -1;
-  }
-  
-  .input-container .topline {
-    position: absolute;
-    content: "";
-    background-color: #0B2447;
-    width: 0%;
-    height: 2px;
-    right: 0;
-    top: 0;
-    transition: all 0.5s;
-  }
-  
-  .input-container input[type="text"]:focus ~ .topline {
-    width: 35%;
-    transition: all 0.5s;
-  }
-  
-  .input-container .underline {
-    position: absolute;
-    content: "";
-    background-color: #0B2447;
-    width: 0%;
-    height: 2px;
-    right: 0;
-    bottom: 0;
-    transition: all 0.5s;
-  }
-  
-  .input-container input[type="text"]:focus ~ .underline {
-    width: 100%;
-    transition: all 0.5s;
-  }
-  
-  .input-container input[type="text"]:focus ~ .label {
-    top: -10px;
-    transform: scale(1);
-    transition: all 0.5s;
-  } */
 
-/* 
 
-  .form {
-    --width-of-input: 200px;
-    --border-height: 1px;
-    --border-before-color: rgba(221, 221, 221, 0.39);
-    --border-after-color: #5891ff;
-    --input-hovered-color: #4985e01f;
-    position: relative;
-    width: var(--width-of-input);
-   }
- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .fondo{
 
@@ -96,12 +35,13 @@ padding: 20px;
 
 }
 
+
    /* styling of Input */
    .input {
     margin-left: 8px;
-    color: #000000;
+    color: #ffffff;
     font-size: 2rem;
-    background-color: transparent;
+    background-color: rgb(41, 206, 165);
     width: 800px;
     box-sizing: border-box;
     padding-inline: 0.5em;
@@ -110,6 +50,14 @@ padding: 20px;
     border-bottom: var(--border-height) solid var(--border-before-color);
     /* border-left: 5px; */
    }
+
+   input::placeholder{
+
+    color: rgb(255, 255, 255);
+   }
+
+
+
    /* styling of animated border */
    .input-border {
     position: absolute;
@@ -119,11 +67,23 @@ padding: 20px;
     bottom: 0;
     left: 0;
     transition: 0.3s;
+
    }
    /* Hover on Input */
    input:hover {
-    background: var(--input-hovered-color);
+    /* background: var(--input-hovered-color); */
+    background-color: rgb(41, 206, 165);
+
+
+    
    }
+   
+   input:hover::placeholder{
+
+color: rgb(255, 255, 255);
+
+   }
+
    
    input:focus {
     outline: none;

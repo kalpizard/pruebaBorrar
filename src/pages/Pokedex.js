@@ -12,7 +12,7 @@ function Pokedex() {
     <div>
       <div>
         <Header />
-        <Input/>
+        {/* <Input/> */}
         <PokeCards />
         <Pagination />
       </div>

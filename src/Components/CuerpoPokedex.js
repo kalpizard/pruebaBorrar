@@ -11,6 +11,10 @@ function Pokedex33() {
   const [page, setPage] = useState(1);
   const ShowLimit = 20; // Número de Pokémons a mostrar por página
 
+  // fILTRAR POR PAGINA
+  const [SearchTerm, setSearchTerm] = useState("");
+  //FILTRAR TODO
+
   useEffect(() => {
     const fetchPokemon = async () => {
       const offset = (page - 1) * ShowLimit; // Calcula el offset
@@ -29,6 +33,18 @@ function Pokedex33() {
     fetchPokemon();
   }, [page]);
 
+  const handleSearch = (e) => {
+    setSearchTerm(e.target.value);
+  };
+  const filteredPokemon = Pokemons.filter(
+    (pokemon) =>
+      pokemon.name
+        .toLowerCase()
+        .trim()
+        .includes(SearchTerm.toLowerCase().trim()) || // Filtrar por nombre
+      pokemon.id.toString().includes(SearchTerm) // Filtrar por ID
+  );
+
   function updatePage(newPage) {
     setPage(newPage); // Actualiza la página cuando se hace clic en un botón de paginación
   }
@@ -38,61 +54,44 @@ function Pokedex33() {
   }
 
   return (
-    <div className="contenedor">
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {isLoading ? (
-        <>
-          {Pokemons.map((item, index) => {
-            return (
-              <div className="book" key={item.id}>
-
+    <>
+      <input value={SearchTerm} onChange={handleSearch}></input>
+      <div className="contenedor">
+        {isLoading ? (
+          <>
+            {filteredPokemon.map((item, index) => {
+              return (
+                <div className="book" key={item.id}>
                   <p className="name">{item.name}</p>
-                <div  className="imagenesinternas" >
+                  <div className="imagenesinternas">
+                    <img className="imagenInterior" src={item.image2} />
+                    <img className="imagenInterior" src={item.image3} />
+                  </div>
 
-                <img className="imagenInterior" src={item.image2} />
-                  <img className="imagenInterior" src={item.image3} />
+                  <div className="letrastyle">
+                    <p>Experiencia Base: {item.experience}</p>
+                    <p> Tipo: {item.type}</p>
+                    <p className="name"># {item.id}</p>
+                  </div>
 
+                  <div className="cover">
+                    <img className="tamaño" src={item.image} />
+                  </div>
                 </div>
-
-
-                <div className="letrastyle">
-                  <p>Experiencia Base: {item.experience}</p>
-                  <p> Tipo:  {item.type}</p>
-                  <p className="name"># {item.id}</p>
-                </div>
-
-
-                <div className="cover">
-
-
-                  <img className="tamaño" src={item.image} />
-                </div>
-              </div>
-            );
-          })}
-          <Pagination
-            totalItems={500} // Número total de elementos
-            itemsPerPage={ShowLimit} // Número de elementos por página
-            currentPage={page}
-            updatePage={updatePage}
-          />
-        </>
-      ) : (
-        <h2 className="loading">Esta Cargando...</h2>
-      )}
-    </div>
+              );
+            })}
+          </>
+        ) : (
+          <h2 className="loading">Esta Cargando...</h2>
+        )}
+        <Pagination
+          totalItems={500} // Número total de elementos
+          itemsPerPage={ShowLimit} // Número de elementos por página
+          currentPage={page}
+          updatePage={updatePage}
+        />
+      </div>
+    </>
   );
 }
 

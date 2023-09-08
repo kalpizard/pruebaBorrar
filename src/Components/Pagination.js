@@ -36,11 +36,13 @@ function Pagination({ totalItems, itemsPerPage, currentPage, updatePage }) {
 
 
 
-    <div className="">
+    <div className="a">
       {Array.from({ length: totalBtn }, (_, index) => (
           <button
+          className="button"
           key={index}
           value={index + 1}
+
           onClick={() => handleClick(index + 1)}
           >
           {index + 1}
@@ -51,6 +53,7 @@ function Pagination({ totalItems, itemsPerPage, currentPage, updatePage }) {
       </div>
   );
 }
+
 
 export default Pagination;
 
