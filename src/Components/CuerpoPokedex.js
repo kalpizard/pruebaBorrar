@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { getPokemonList } from "../Api";
+import { AddPokemon, getPokemonList, getPokemonMockApi } from "../Api";
 import "../styles/cuerpoPokedex.css";
 import Pagination from "../Components/Pagination";
+import Like from "./Like";
 // import pokis from "../poki.png"
 
 function Pokedex33() {
@@ -9,6 +10,8 @@ function Pokedex33() {
   const [isLoading, setisLoading] = useState(false);
   const [loves, setLoves] = useState(0); // Inicializa loves en 0
   const [page, setPage] = useState(1);
+  const [favorites, setFavorites] = useState(false);
+  const [update, setUpdate] = useState(false);
   const ShowLimit = 20; // Número de Pokémons a mostrar por página
 
   // fILTRAR POR PAGINA
@@ -23,7 +26,9 @@ function Pokedex33() {
         const fetchedPokemons = [];
         const response = await getPokemonList(url);
         const data = response.array;
-
+        //get favorites
+        const favoritePokemons = await getPokemonMockApi();
+        setFavorites(favoritePokemons);
         setPokemons(data);
       } catch (error) {
         console.error("Error capturando Pokemon data", error);
@@ -31,7 +36,7 @@ function Pokedex33() {
       setisLoading(true);
     };
     fetchPokemon();
-  }, [page]);
+  }, [page, update]);
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
@@ -52,10 +57,28 @@ function Pokedex33() {
   function handleLoves(e) {
     setLoves(loves + 1); // Incrementa loves en 1 cuando se hace clic en el botón
   }
+  async function likePokemon(pokemon) {
+    const verify = await AddPokemon(pokemon.id);
+    //verify
+    if (verify === true) {
+      console.log("ya existe");
+    } else {
+      setUpdate(!update);
+      console.log("agregado");
+    }
+  }
 
   return (
     <>
-      <input value={SearchTerm} onChange={handleSearch}></input>
+      <div className="inputDiv">
+        <input
+          placeholder="Busca tu Pokémon."
+          className="nuevoinput"
+          value={SearchTerm}
+          onChange={handleSearch}
+        ></input>
+      </div>
+
       <div className="contenedor">
         {isLoading ? (
           <>
@@ -63,6 +86,27 @@ function Pokedex33() {
               return (
                 <div className="book" key={item.id}>
                   <p className="name">{item.name}</p>
+                  {/* <Like pokemonId={item.id} /> */}
+                  {favorites.some(
+                    (favorite) => favorite.idPokemon === item.id
+                  ) ? (
+                    <div className="buttons">
+                      <p className="like">❤️</p>
+                      <button
+                        // onClick={() => deleteFavorite(item.id)}
+                        className="delete"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  ) : (
+                    <button
+                      className="btnAdd"
+                      onClick={() => likePokemon(item)}
+                    >
+                      Like
+                    </button>
+                  )}
                   <div className="imagenesinternas">
                     <img className="imagenInterior" src={item.image2} />
                     <img className="imagenInterior" src={item.image3} />
@@ -70,7 +114,7 @@ function Pokedex33() {
 
                   <div className="letrastyle">
                     <p>Experiencia Base: {item.experience}</p>
-                    <p> Tipo: {item.type}</p>
+                    <p> type: {item.type}</p>
                     <p className="name"># {item.id}</p>
                   </div>
 

@@ -48,18 +48,22 @@ padding: 20px;
     padding-block: 0.9em;
     border: 10px;
     border-bottom: var(--border-height) solid var(--border-before-color);
+
+    
+    
+    
     /* border-left: 5px; */
    }
 
-   input::placeholder{
+   /* input::placeholder{
 
     color: rgb(255, 255, 255);
    }
-
+ */
 
 
    /* styling of animated border */
-   .input-border {
+   /* .input-border {
     position: absolute;
     background: var(--border-after-color);
     width: 0%;
@@ -68,15 +72,20 @@ padding: 20px;
     left: 0;
     transition: 0.3s;
 
-   }
-   /* Hover on Input */
+
+
+   } */
+
+
+
+   /* Hover on Input
    input:hover {
-    /* background: var(--input-hovered-color); */
+    background: var(--input-hovered-color);
     background-color: rgb(41, 206, 165);
 
 
     
-   }
+   } */
    
    input:hover::placeholder{
 

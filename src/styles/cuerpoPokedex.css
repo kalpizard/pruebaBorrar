@@ -1,18 +1,25 @@
-
 .input-container {
   position: relative;
 }
 
+
+.nuevoinput{
+  height: 40px;
+width: 300px;
+font-size: 33px;
+}
+
+/* 
 .input {
   padding: 10px;
   height: 40px;
-  border: 2px solid #0B2447;
+  border: 2px solid #0b2447;
   border-top: none;
   border-bottom: none;
   font-size: 16px;
   background: transparent;
   outline: none;
-  box-shadow: 7px 7px 0px 0px #0B2447;
+  box-shadow: 7px 7px 0px 0px #0b2447;
   transition: all 0.5s;
 }
 
@@ -25,7 +32,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  color: #0B2447;
+  color: #0b2447;
   transition: all 0.5s;
   transform: scale(0);
   z-index: -1;
@@ -34,7 +41,7 @@
 .input-container .topline {
   position: absolute;
   content: "";
-  background-color: #0B2447;
+  background-color: #0b2447;
   width: 0%;
   height: 2px;
   right: 0;
@@ -50,7 +57,7 @@
 .input-container .underline {
   position: absolute;
   content: "";
-  background-color: #0B2447;
+  background-color: #0b2447;
   width: 0%;
   height: 2px;
   right: 0;
@@ -67,57 +74,41 @@
   top: -10px;
   transform: scale(1);
   transition: all 0.5s;
-}
+} */
 
-
-
-
-
-.acomodo{
+.acomodo {
   display: flex;
 
-justify-content: center;
- align-items: center;
-/* margin-left: 2000px;  */
-
-
-}
-
- 
-
-
-
-
-
-
-
- .botones{
-
-  display: flex;
   justify-content: center;
-align-items: center;
-/* width: 30px; */
+  align-items: center;
+  /* margin-left: 2000px;  */
+}
 
- }
+.botones {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
+  /* width: 30px; */
+}
 
+.button:hover {
+  background-color: rgb(189, 38, 200);
+  color: rgb(4, 4, 4);
+}
 
-.a{
-  background-color: rgb(255, 255, 191);
+.a {
+  background-color: rgb(101, 158, 41);
   display: flex;
+  /* display: grid; */
   justify-content: center;
   margin-left: 1300px;
+  /* flex-wrap: wrap; */
+
 }
 
-
-
-
-
-
-
-
-
-.button{
+.button {
   background-color: rgb(41, 206, 165);
   justify-content: space-around;
   align-items: center;
@@ -129,27 +120,6 @@ align-items: center;
   border-radius: 6px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contenedor {
   /* display: flex;
   flex-wrap: wrap;
@@ -159,16 +129,27 @@ align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   text-align: center;
 
-  background-color: rgb(255, 255, 191);
+  background-color: rgb(101, 158, 41);
 }
 
 
-.imagenesinternas{
+.inputDiv{
+  background-color: rgb(101, 158, 41);
+padding: 30px;
+}
+
+
+
+
+
+
+
+.imagenesinternas {
   display: flex;
   justify-content: center;
 }
 
-.imagenInterior{
+.imagenInterior {
   width: 100px;
   height: 100px;
 }
@@ -183,7 +164,7 @@ align-items: center;
   border-radius: 10px;
   width: 300px;
   height: 450px;
-  background-color: rgb(227, 228,229);
+  background-color: rgb(227, 228, 229);
   -webkit-box-shadow: 1px 1px 12px #000;
   box-shadow: 1px 1px 12px #000;
   -webkit-transform: preserve-3d;
@@ -210,7 +191,7 @@ align-items: center;
   position: absolute;
   /* background-color: rgb(254, 70, 165); */
   background-image: url(../poki.png);
-  background-size: 300px  450px;
+  background-size: 300px 450px;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -234,27 +215,20 @@ align-items: center;
   transform: rotatey(-80deg);
 }
 
-.name{
-
-font-size: 40px;
-
+.name {
+  font-size: 30px;
 }
 
-.letrastyle{
-/* margin-top: 60px; */
+.letrastyle {
+  /* margin-top: 60px; */
   /* display:flex; */
   /* justify-content: center; */
   align-items: center;
   color: rgb(0, 75, 173);
-  
+
   font-size: 80px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
-
-
 
 p {
   font-size: 20px;

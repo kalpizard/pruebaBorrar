@@ -1,5 +1,8 @@
 .prueba{
 
+
+    /* flex-wrap: wrap; */
+    display: grid;
 display: flex ;
 justify-content: space-around;
 
@@ -8,16 +11,17 @@ background-color: rgb(255, 255, 191);
 }
 
 .contenido{
-
-   box-shadow: 50px 20px 10px rgb(46, 43, 43);
-    align-items: flex-start;
-    display: flex;
-    justify-content: center;
     
+    align-items: flex-start;
     background-color: rgb(255, 0, 0);
+    box-shadow: 50px 20px 10px rgb(46, 43, 43);
+    display: flex;
+   
+    justify-content: center; 
+    
     height: 600px;
     width: 200px;
-    /* border: 8px solid rgb(212, 175, 55); */
+   
     border-top: 8px solid rgb(0, 0, 0) ;
     border-right: 8px solid rgb(212, 175, 55);
 
