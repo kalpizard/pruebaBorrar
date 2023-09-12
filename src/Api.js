@@ -95,4 +95,39 @@ export async function AddPokemon(id) {
   }
 }
 
-// https://64ee6291219b3e2873c32ca4.mockapi.io/favorites/favorites-pokemon/
+// 
+
+export async function DeletePokemonFav(idf) {
+  const pokemonMockApi = await getPokemonMockApi();
+  let idDelete = '';
+  const verify = pokemonMockApi.some(({ idPokemon , id }) => {
+    if (idPokemon === idf){
+      idDelete = id;
+      // console.log("Encontrado", idDelete);
+    }
+    return idPokemon === idf;
+  });
+  
+  console.log(verify);
+
+    return fetch(
+      `https://64ee6291219b3e2873c32ca4.mockapi.io/favorites/favorites-pokemon/${idDelete}`,
+      {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        // body: JSON.stringify({ idPokemon: id }),
+      }
+    ).then((res) => {
+      if (res.ok) {
+        console.log(`Datos eliminados en mockupApi`);
+      } else {
+        throw `Error`;
+      }
+    });
+ 
+}
+
+
+

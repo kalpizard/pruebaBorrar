@@ -12,16 +12,16 @@ function Like({ pokemonId }) {
   const toogleDoor = () => {
     setDoorOpen(!doorOpen);
   };
-  useEffect(() => {});
+  // useEffect(() => {});
 
-  return (
-    <div className="divfavorito">
-      <p>{state ? "" : "💞"}</p>
-      <button onClick={() => addFavorite()}>
-        {doorOpen ? "favorito" : "eliminar favorito"}
-      </button>
-    </div>
-  );
+  // return (
+  //   <div className="divfavorito">
+  //     <p>{state ? "" : "💞"}</p>
+  //     <button onClick={() => addFavorite()}>
+  //       {doorOpen ? "favorito" : "eliminar favorito"}
+  //     </button>
+  //   </div>
+  // );
 }
 
 export default Like;

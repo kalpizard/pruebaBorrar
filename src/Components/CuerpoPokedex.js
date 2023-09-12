@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { AddPokemon, getPokemonList, getPokemonMockApi } from "../Api";
+import { AddPokemon, DeletePokemonFav, getPokemonList, getPokemonMockApi } from "../Api";
 import "../styles/cuerpoPokedex.css";
 import Pagination from "../Components/Pagination";
 import Like from "./Like";
+
 // import pokis from "../poki.png"
 
 function Pokedex33() {
@@ -54,9 +55,12 @@ function Pokedex33() {
     setPage(newPage); // Actualiza la página cuando se hace clic en un botón de paginación
   }
 
-  function handleLoves(e) {
-    setLoves(loves + 1); // Incrementa loves en 1 cuando se hace clic en el botón
-  }
+  // function handleLoves(e) {
+  //   setLoves(loves + 1); // Incrementa loves en 1 cuando se hace clic en el botón
+  // }
+
+
+
   async function likePokemon(pokemon) {
     const verify = await AddPokemon(pokemon.id);
     //verify
@@ -67,6 +71,34 @@ function Pokedex33() {
       console.log("agregado");
     }
   }
+
+
+  async function deleteFavorite(pokemon) {
+    const verify = await DeletePokemonFav(pokemon);
+    //verify
+    if (verify === true) {
+      alert("Eliminado");
+    } else {
+      setUpdate(!update);
+      console.log("no");
+    }
+
+
+    console.log(pokemon);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   return (
     <>
@@ -86,14 +118,14 @@ function Pokedex33() {
               return (
                 <div className="book" key={item.id}>
                   <p className="name">{item.name}</p>
-                  {/* <Like pokemonId={item.id} /> */}
+                 
                   {favorites.some(
                     (favorite) => favorite.idPokemon === item.id
                   ) ? (
                     <div className="buttons">
                       <p className="like">❤️</p>
                       <button
-                        // onClick={() => deleteFavorite(item.id)}
+                        onClick={() => deleteFavorite(item.id)}
                         className="delete"
                       >
                         Delete
@@ -140,3 +172,7 @@ function Pokedex33() {
 }
 
 export default Pokedex33;
+
+
+
+// https://64ee6291219b3e2873c32ca4.mockapi.io/favorites/favorites-pokemon
